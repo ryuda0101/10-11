@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 상세화면 페이지 (게시글 번호에 따른 내용 변경)</title>
+</head>
+<body>
+    <div class="detail_view">
+        <div class="number">게시글 번호 <%- data.brdid %></div>
+        <div class="title">게시글 제목 <%- data.brdtitle %></div>
+        <div class="context">게시글 내용 <%- data.brdcontext %></div>
+        <div class="auther">게시글 작성자 <%- data.brdauther %></div>
+    </div>
+    <div class="btns">
+        <a href="/uptview/<%- data.brdid %>">수정</a>
+        <a href="/delete/<%- data.brdid %>">삭제</a>
+        <a href="/list">목록</a>
+    </div>
+</body>
+</html>
